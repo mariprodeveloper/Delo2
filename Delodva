@@ -1,0 +1,101 @@
+{
+  "id": "case_demeter_vs_hades_garden",
+  "title": "Demeter vs Hades – The Stolen Bloom",
+  "evidence": [
+    {
+      "id": "wilted_bloom",
+      "image": "wilted_bloom"
+    },
+    {
+      "id": "underworld_soil",
+      "image": "underworld_soil"
+    }
+  ],
+  "scenes": [
+    {
+      "background": "zeus_throne_bg",
+      "character": "zeus_pointing",
+      "text": "Zeus: A sacred bloom has vanished. Two deities are at odds. Let the divine court begin."
+    },
+    {
+      "background": "garden_bg",
+      "character": "demeter_angry",
+      "text": "Demeter: This was no accident! Hades wants dominion over life itself!"
+    },
+    {
+      "background": "garden_bg",
+      "character": "hades_calm",
+      "text": "Hades: I neither touched the flower nor need its power. Death is my realm."
+    },
+    {
+      "background": "garden_bg",
+      "character": "persephone_sad",
+      "text": "Persephone: I saw the flower wilt before dawn... but someone had disturbed the soil."
+    },
+    {
+      "background": "garden_bg",
+      "character": "",
+      "text": "",
+      "evidence_id": "wilted_bloom"
+    },
+    {
+      "background": "garden_bg",
+      "character": "",
+      "text": "",
+      "evidence_id": "underworld_soil"
+    },
+    {
+      "background": "garden_bg",
+      "character": "zeus_pointing",
+      "text": "Zeus: The time for accusations has passed. I await the verdicts."
+    }
+  ],
+  "choices": [
+    {
+      "text": "Blame Hades",
+      "outcome": {
+        "zeus_reaction": "angry",
+        "reputation": {
+          "hades": -5,
+          "demeter": +3
+        },
+        "note": "Hades retreats to the underworld in silence. The garden slowly heals."
+      }
+    },
+    {
+      "text": "Side with Demeter",
+      "outcome": {
+        "zeus_reaction": "neutral",
+        "reputation": {
+          "demeter": +5,
+          "persephone": -2
+        },
+        "note": "Demeter restores the bloom, but Persephone feels unheard."
+      }
+    },
+    {
+      "text": "Reveal natural decay (requires both clues)",
+      "requirement": "wilted_bloom && underworld_soil",
+      "outcome": {
+        "zeus_reaction": "wise",
+        "reputation": {
+          "zeus": +5,
+          "nature_spirits": +3
+        },
+        "note": "Zeus declares it a natural cycle. The gods nod in silence."
+      }
+    },
+    {
+      "text": "Send all to replant together",
+      "outcome": {
+        "zeus_reaction": "smiling",
+        "reputation": {
+          "zeus": +2,
+          "demeter": +2,
+          "hades": +2
+        },
+        "note": "All gods toil in harmony. A new bloom rises from shared effort."
+      }
+    }
+  ]
+}
