@@ -57,7 +57,7 @@
         "zeus_reaction": "angry",
         "reputation": {
           "hades": -5,
-          "demeter": +3
+          "demeter": 3
         },
         "note": "Hades retreats to the underworld in silence. The garden slowly heals."
       }
@@ -67,7 +67,7 @@
       "outcome": {
         "zeus_reaction": "neutral",
         "reputation": {
-          "demeter": +5,
+          "demeter": 5,
           "persephone": -2
         },
         "note": "Demeter restores the bloom, but Persephone feels unheard."
@@ -79,8 +79,8 @@
       "outcome": {
         "zeus_reaction": "wise",
         "reputation": {
-          "zeus": +5,
-          "nature_spirits": +3
+          "zeus": 5,
+          "nature_spirits": 3
         },
         "note": "Zeus declares it a natural cycle. The gods nod in silence."
       }
@@ -90,9 +90,9 @@
       "outcome": {
         "zeus_reaction": "smiling",
         "reputation": {
-          "zeus": +2,
-          "demeter": +2,
-          "hades": +2
+          "zeus": 2,
+          "demeter": 2,
+          "hades": 2
         },
         "note": "All gods toil in harmony. A new bloom rises from shared effort."
       }
